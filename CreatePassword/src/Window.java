@@ -8,15 +8,14 @@ import javax.swing.JPanel;
 public class Window extends JFrame implements ActionListener
 {
 	JPanel [] panel;
-	
+
 	Window()
 	{
 		panel = new JPanel[2];
 		setSize(500,500);
 		setResizable(false);
-		
 		add(panel[0] = new JPanel(),new GridLayout(2,1));
-		
+		panel[0].add(panel[1] = new JPanel(),new GridLayout(1,2));
 	}
 
 	@Override
