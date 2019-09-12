@@ -9,13 +9,12 @@ public class DMcardUpdateMain
 		boolean exist = cf.check();
 		if(exist==true)
 		{
-			CreateConnectStatement ccs = new CreateConnectStatement();
-			ReadCardText rct = new ReadCardText();
-
+			Window w = new Window(800,600);
+			w.setVisible(true);
 		}
 		else
 		{
-			ErrorWindow ew = new ErrorWindow("ファイルが存在しません");
+			ErrorWindow ew = new ErrorWindow("ファイルが存在しません",500,400);
 			ew.setVisible(true);
 		}
 	}
