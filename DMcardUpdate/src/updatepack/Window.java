@@ -5,9 +5,11 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 import javax.swing.JFrame;
+import javax.swing.JPanel;
 
 public class Window extends JFrame implements ActionListener
 {
+	JPanel base;
 
 	Window(int x,int y)
 	{
