@@ -10,9 +10,13 @@ import javax.swing.JPanel;
 public class Window extends JFrame implements ActionListener
 {
 	JPanel base;
+	CreateConnectStatement css;
+	ReadCardText rct;
 
 	Window(int x,int y)
 	{
+		css = new CreateConnectStatement();
+		rct = new ReadCardText();
 		setBounds((Toolkit.getDefaultToolkit().getScreenSize().width/2)-x,(Toolkit.getDefaultToolkit().getScreenSize().height/2)-y,x,y);
 	}
 

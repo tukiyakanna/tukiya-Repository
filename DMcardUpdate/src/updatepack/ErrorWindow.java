@@ -14,7 +14,7 @@ public class ErrorWindow extends JFrame
 	ErrorWindow(String error,int x,int y)
 	{
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds((Toolkit.getDefaultToolkit().getScreenSize().width/2)-x,(Toolkit.getDefaultToolkit().getScreenSize().height/2)-y,x,y);
+		setBounds((Toolkit.getDefaultToolkit().getScreenSize().width-x)/2,(Toolkit.getDefaultToolkit().getScreenSize().height-y)/2,x,y);
 		add(base = new JPanel());
 		base.add(errorstring = new JLabel(error));
 	}
