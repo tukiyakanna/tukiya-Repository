@@ -55,6 +55,15 @@ public class ReadCardText
 			System.out.println("ReadCardRext-card_dataでエラー");
 		}
 
+		try
+		{
+			br.close();
+		}
+		catch(IOException e)
+		{
+			System.out.println(e);
+		}
+
 		return line;
 	}
 }
