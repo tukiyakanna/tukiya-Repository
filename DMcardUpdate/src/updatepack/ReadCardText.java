@@ -47,7 +47,7 @@ public class ReadCardText
 	{
 		try
 		{
-			for(int i =0;(line[i] = br.readLine()) != null || i<line.length;i++){	}
+			for(int i =0;i<line.length || (line[i] = br.readLine()) != null;i++){	}
 		}
 		catch(IOException e)
 		{
