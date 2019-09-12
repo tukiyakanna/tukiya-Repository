@@ -15,9 +15,9 @@ public class ReadCardText
 
 	String [] line;
 
-	ReadCardText(String filepath)
+	ReadCardText()
 	{
-		cardfile = new File(filepath);
+		cardfile = new File("newcard.txt");
 		try
 		{
 			br = new BufferedReader(new FileReader(cardfile));
