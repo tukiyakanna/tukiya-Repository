@@ -14,7 +14,7 @@ public class DMcardUpdateMain
 		}
 		else
 		{
-			ErrorWindow ew = new ErrorWindow("ファイルが存在しません",500,400);
+			ErrorWindow ew = new ErrorWindow("ファイルが存在しません",200,100);
 			ew.setVisible(true);
 		}
 	}
