@@ -29,13 +29,22 @@ public class Window extends JFrame implements ActionListener
 		add(buttonp = new JPanel(),new GridLayout(1,2));
 		buttonp.add(button[0] = new JButton("YES"));
 		buttonp.add(button[1] = new JButton("NO"));
+		button[0].addActionListener(this);
+		button[1].addActionListener(this);
 	}
 
 	@Override
 	public void actionPerformed(ActionEvent e)
 	{
-		// TODO 自動生成されたメソッド・スタブ
+		JButton b = (JButton)e.getSource();
+		if(b == button[0])
+		{
 
+		}
+		if(b == button[1])
+		{
+			dispose();
+		}
 	}
 
 }
