@@ -15,4 +15,6 @@ public class DataBaseUpdate
 		ccs = new CreateConnectStatement();
 		rct = new ReadCardText();
 	}
+	
+	
 }
